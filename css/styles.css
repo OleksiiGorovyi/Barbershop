@@ -1,0 +1,442 @@
+:root {--accent-color:#FF6C00;
+    --typical-lh: 1.36;
+    --main-font: 'Open sans', sans-serif;
+    --main-title-color: #ffffff;
+    --secondary-color: #303030;
+    --secondary-btn-color: #303030;
+    --main-btn-color: #ffffff;
+    --font-ralevay: 'Raleway' sans-serif;
+    --letter-spacing: 0.02em;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+    line-height: none;
+}
+
+a {
+text-decoration: none;
+color: currentColor;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+
+body {
+    font-family: var(--main-font);
+    background: #FFFFFF;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid red;
+    margin: 0 auto;
+}
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .section {
+    margin-bottom: 120px;
+    margin-top: 120px;
+  }
+
+
+/* ----------------header---------------- */
+
+.header {
+    background: rgba(25, 28, 38, 0.2);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-link,
+.header-tel {
+    font-weight: 600;
+        font-size: 12px;
+        line-height:1.33;
+        letter-spacing: 0.1em;
+        color: var(--main-color);
+}
+
+.hofo:hover, 
+.hofo:focus
+{
+    color: var(--accent-color);
+}
+
+ .btn {    font-family: inherit;
+    font-weight: 600;
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        cursor: pointer;
+ }
+
+.header-btn {
+        color: var(--main-btn-color);
+        background-color: aqua;
+}
+
+/* ----------hero--------- */
+
+.hero-soc {background-color: purple;}
+
+
+.hero-content {
+    padding: 272px 100px 208px 100px;
+}
+
+.hero-top-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: var(--typical-lh);
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-family: var(--font-ralevay);
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 1.18;
+        letter-spacing: 0.05em;
+        color: var(--main-title-color);
+        margin-bottom: 20px;
+}
+
+.hero-bottom-text {
+    font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+        max-width: 360px;
+}
+
+
+
+/* -----------------About------------------ */
+
+
+.about-text {
+    font-weight: 600;
+        font-size: 11px;
+        line-height: var(--typical-lh);
+        text-transform: uppercase;
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+}
+
+.about-title {
+    font-family: var(--font-ralevay);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.about-top-text {
+font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.about-bottom-text {
+font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #555555;
+    margin-bottom: 42px;
+}
+
+.about-btn {
+        color: var(--secondary-btn-color);
+}
+
+/* --------------Prices------------- */
+
+.prices-list {
+    border: 1px solid #FFFFFF;
+    padding: 30px 20px;
+}
+.prices {
+    background-color: #555555;
+}
+
+.prices-top-text {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: var(--typical-lh);
+        text-transform: uppercase;
+        color: rgba(157, 164, 189, 0.6);
+        margin-bottom: 20px;
+}
+
+.prices-title {
+    font-family: var(--font-ralevay);
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        color: var(--main-title-color);
+        margin-bottom: 44px;
+}
+
+.prices-text {
+    font-size: 18px;
+        line-height: 1.67;
+        letter-spacing: 0.02em;
+        color: #9DA4BD;
+}
+
+.prices-btn {
+
+        color: var(--main-btn-color);
+        cursor: pointer;
+        margin: 0 auto;
+        display: block;
+        margin-top: 44px;
+}
+
+/* ----------------Benefits------------ */
+
+.benefits-item {
+    width: 170px;
+    height: 133px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px 24px;
+}
+
+.benefits-item span {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(57 / 42);
+    letter-spacing: 0.05em;
+    
+    color: #303030;
+}
+
+
+.benefits-item-text {
+    font-weight: 600;
+font-size: 11px;
+text-align: center;
+line-height: var(--typical-lh);
+color: var(--secondary-color);
+
+}
+
+.benefits-top-text {
+    font-weight: 600;
+font-size: 11px;
+line-height: var(--typical-lh);
+text-transform: uppercase;
+color: var(--secondary-color);
+margin-bottom: 20px;
+}
+
+.benefits-title {
+    font-family: var(--font-ralevay);
+font-weight: 700;
+font-size: 42px;
+line-height: 1.16;
+letter-spacing: 0.05em;
+color: var(--secondary-color);
+margin-bottom: 20px;
+}
+
+.benefits-bottom-text {
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #555555;
+}
+
+
+
+/* -----------Barbers----------- */
+.barbers {
+    background: #F7F7F7;
+}
+.barbers-text {
+    font-weight: 600;
+font-size: 11px;
+line-height: var(--typical-lh);
+text-transform: uppercase;
+color: var(--secondary-color);
+margin-bottom: 20px;
+}
+
+
+.barbers-title {
+    font-family: var(--font-ralevay);
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49 /42);
+letter-spacing: 0.05em;
+color: var(--secondary-color);
+margin-bottom: 44px;
+}
+
+.barbers-item-title {
+    padding-top: 30px;
+}
+
+.barbers-item-title {
+    font-weight: 400;
+    font-size: 18px;
+line-height: calc(25 / 18);
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--secondary-color);
+margin-bottom: 8px;
+}
+
+.barbers-item-text {
+    font-size: 14px;
+line-height: 1.35;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--accent-color);
+margin-bottom: 30px;
+}
+
+.barbers-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: tomato;
+    display: block;
+}
+
+
+/* ---------------Gallary-------- */
+
+
+.gallary-text {
+    font-weight: 600;
+font-size: 11px;
+line-height: var(--typical-lh);
+text-transform: uppercase;
+
+color: var(--secondary-color);
+
+}
+
+/* ----------Online----------- */
+
+.online {
+    background-color: #303030;
+}
+
+.online-title, .contacts-title {
+    font-family: var(--font-ralevay);
+font-weight: 700;
+font-size: 42px;
+line-height: calc(49 / 42);
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
+
+/* --------Address------------ */
+
+.contacts {
+    background: #191C26;
+}
+
+
+.contacts-address { font-style: normal;
+}
+
+.contacts-link,
+.contacts-address-link {
+    font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+
+.contacts-address-link {
+    font-weight: 700;
+}
+
+.contacts-top-text {
+    font-weight: 600;
+font-size: 11px;
+line-height: var(--typical-lh);
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.contacts-schedule {
+    font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+color: #9DA4BD;
+}
+
+/* --------Footer---------- */
+
+.footer-copy, .footer-link {
+    font-weight: 600;
+font-size: 11px;
+line-height: var(--typical-lh);
+letter-spacing: 0.2em;
+color: #9DA4BD;
+}
+
+
+.footer-link {
+color: #303030;
+}
